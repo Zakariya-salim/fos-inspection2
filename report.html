@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOS Report</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body onload="initReport()">
+  <div id="topbarMount"></div>
+  <div class="container page">
+    <div class="actions no-print" style="margin-bottom:16px">
+      <button class="btn" type="button" onclick="window.print()">Print / Save PDF</button>
+      <button class="btn secondary" type="button" onclick="location.href='dashboard.html'">Back to Dashboard</button>
+    </div>
+    <div id="reportMount"></div>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

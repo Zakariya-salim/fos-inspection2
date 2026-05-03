@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOS Admin Login</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body onload="initLogin()">
+  <div id="topbarMount"></div>
+  <div class="login-shell">
+    <div class="card">
+      <div class="center" style="margin-bottom:20px">
+        <img src="assets/logo.png" alt="FOS logo" style="width:90px;height:90px;object-fit:contain;border-radius:22px;border:1px solid var(--line);padding:12px;background:#fff">
+        <h2 class="login-title">Admin / Unit Login</h2>
+        <p class="help">Only super admin and unit accounts can access the dashboard.</p>
+      </div>
+      <form id="loginForm">
+        <div class="field"><label>Username / Email</label><input id="loginEmail" type="email" placeholder="Enter your username"></div>
+        <div class="field"><label>Password</label><input id="loginPassword" type="password" placeholder="Enter your password"></div>
+        <div class="actions" style="margin-top:16px"><button class="btn" style="width:100%" type="submit">Login</button></div>
+      </form>
+      <div id="loginMsg" style="margin-top:14px"></div>
+    </div>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

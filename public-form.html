@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOS Public Inspection Form</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body onload="initPublicForm()">
+  <div id="topbarMount"></div>
+  <div class="container page">
+    <div class="card gradient-card" style="margin-bottom:18px">
+      <h2 style="margin-top:0">Daily Vehicle Inspection / الفحص اليومي للمركبة</h2>
+      <p>No login is required on this page. The user only enters their name, completes the inspection, and submits the form.</p>
+    </div>
+    <div class="panel">
+      <div class="grid-2">
+        <div class="field"><label>Unit / الوحدة</label><select id="tenantSelect"></select></div>
+        <div class="field"><label>Your Name / اسمك</label><input id="submitterName" type="text" placeholder="Enter your name / أدخل اسمك"></div>
+      </div>
+      <form id="publicForm" style="margin-top:18px">
+        <div id="publicSections"></div>
+        <div class="actions">
+          <button class="btn" type="submit">Submit Inspection / إرسال الفحص</button>
+          <button class="btn secondary" type="reset">Reset / إعادة تعيين</button>
+        </div>
+      </form>
+      <div id="publicMsg" style="margin-top:16px"></div>
+    </div>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
