@@ -1,6 +1,6 @@
 const DB_KEY = 'fos_vehicle_app_v5_sections';
 const SESSION_KEY = 'fos_vehicle_session_v5_sections';
-const API_PATH = '/.netlify/functions/db';
+const API_PATH = '/api/db';
 let CLOUD_READY = false;
 let CLOUD_LOADING = null;
 const ROLES = {
